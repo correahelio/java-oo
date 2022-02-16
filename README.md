@@ -14,13 +14,34 @@ Para isso, vamos mostrar como capturar dados do teclado.
 1 - Dentro do pacote 'com.java.oo' crie uma classe chamada 'EntradaUsuario'
 
 Repare que já estamos abordando um conceito comum em programação.
+
 Se vc já leu sobre OO (Orientação a Objetos) já escutou a famosa frase "Baixo acoplamento e Alta Coesão".
+
 Em breve vc vai entender o que isso significa. Porém, nesse momento, vc tem que entender que estamos desenhando as classes com responsabilidades únicas.
 Além disso, elas precisam ter um nome intuitvo para explicar o que ela faz apenas pelo nome.
+
+
+
 Pensa que um novo desenvolvedor vai começar a trabalhar no nosso projeto.
 
+
 Para isso, faz sentido a classe chamar-se 'ExibirDados' sendo que ela estará programada para capturar dados que o cliente digitar ?
+
 Espero que sua resposta tenha sido não! :)
+
+
+Vamos aos exemplos. Isso pode causar confusão em um novo DEV do time não pode ?
+
+![image](https://user-images.githubusercontent.com/22084402/154187372-d8e12a3b-5067-4255-98de-708518f8564c.png)
+
+
+Agora, se colocarmos o nome correto nas formas geométricas fica mais fácil entender. Veja:
+
+![image](https://user-images.githubusercontent.com/22084402/154187485-06388c12-c20e-4f07-b262-109b820bd4cb.png)
+
+
+O mesmo acontece para nosso código. O nome da classe, métodos e variáveis precisam ser claros de acordo com o código que exisitr lá dentro.
+
 
 Portanto, nesse momento, vc já aprendeu a lição básica de orientação a objetos. Alta coesão. Grave esse nome, falaremos muito disso.
 Na verdade, vc como DEV tem que se perguntar constantemente: "Meu código está com alta coesão ?"
