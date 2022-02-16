@@ -1,4 +1,4 @@
-# java-oo
+# Java-OO
 Projeto criado com objeto de explicar conceitos básicos de programação e orientação a objeto em Java
 Vc pode usar a IDE que preferir, porém, esse projeto será abordado usando Intellij.
 
