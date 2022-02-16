@@ -88,6 +88,8 @@ public class OutraDecisaoNumeros {
 
 Nesse exemplo, usamos a decisão através do switch case. 
 
+5 - Execute os códigos acima. Faça testes com números diferentes.
+
 # O que aprendemos ?
 
 Na aula 3, aprendemos:
@@ -117,23 +119,23 @@ A idade do usuário é um número inteiro.
 - 20 anos o sistema deve mostrar: "Usuário tem 20 anos"
 - Qualquer outra idade o sistema deve mostrar: "Usuário tem mais que 20 anos"
 
-Regra de negócio: 
+**Regra de negócio: **
 O sistema só pode exibir uma única mensagem de saída.
 
-Casos de teste:
-Exemplo quando o usuário digitar que tem 5 anos:
+**Casos de teste:**
+**Exemplo quando o usuário digitar que tem 5 anos:**
 - A saída do sistema deve ser: "Usuário tem menos que 20 anos".
 
-Exemplo quando o usuário digitar que tem 10 anos:
+**Exemplo quando o usuário digitar que tem 10 anos:**
 - A saída do sistema deve ser: "Usuário tem menos que 20 anos".
 
-Exemplo quando o usuário digitar que tem 11 anos:
+**Exemplo quando o usuário digitar que tem 11 anos:**
 - A saída do sistema deve ser: "Usuário tem mais que 10 anos".
 
-Exemplo quando o usuário digitar que tem 20 anos:
+**Exemplo quando o usuário digitar que tem 20 anos:**
 - A saída do sistema deve ser: "Usuário tem 20 anos".
 
-Exemplo quando o usuário digitar que tem 21 anos:
+**Exemplo quando o usuário digitar que tem 21 anos:**
 - A saída do sistema deve ser: "Usuário tem mais que 20 anos".
 
 # Vamos melhorar ? - Exercício 3 
@@ -156,27 +158,25 @@ As idades dos usuários devem ser do tipo inteiro.
 "A soma das idades é correspondente a um número ímpar"
 
 
-Casos de teste:
+**Caso de teste 1:**
 - Se o usuário 1 digitar que tem 10 anos e se o usuário 2 digitar que tem 20 anos o sistema deve exibir:
 "Usuário 2 é mais velho!"
 "A soma das idades é correspondente a um número par"
 
+**Caso de teste 2:**
 - Se o usuário 1 digitar que tem 20 anos e se o usuário 2 digitar que tem 10 anos o sistema deve exibir:
 Usuário 1 é mais velho!
 "A soma das idades é correspondente a um número par"
 
+**Caso de teste 3:**
 - Se o usuário 1 digitar que tem 15 anos e se o usuário 2 digitar que tem 16 anos o sistema deve exibir:
 Usuário 2 é mais velho!
 "A soma das idades é correspondente a um número ímpar"
 
+**Caso de teste 4:**
 - Se o usuário 1 digitar que tem 15 anos e se o usuário 2 digitar que tem 15 anos o sistema deve exibir:
 "Os usuários têm a mesma idade!"
 "A soma das idades é correspondente a um número par"
-
-
-
-
-
 
 
 
