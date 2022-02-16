@@ -13,12 +13,15 @@ Primeiro passo é criarmos a estrutura de pacotes Java. Os pacotes servem para o
 Como boa prática, sempre criamos um pacote raiz com um nome que seja relacionado com o projeto em que estamos trabalhando.
 
 1 - Crie uma pasta chamada 'src'
+
 2 - Dentro da pasta 'src' crie uma pasta chamada 'main'
+
 3 - Dentro da pasta 'main' crie uma pasta chamada 'java'
 
 Agora que temos a estrutura principal onde ficarão todas as nossas classes Java. Vamos criar um pacote principal
 
 4 - Dentro da pasta 'src/main/java' crie um pacote chamado 'com.java.oo'
+
 5 - Dentro desse pacote, crie uma classe Main.java com o seguinte conteúdo:
 
 ````
