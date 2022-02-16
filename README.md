@@ -64,6 +64,10 @@ public class EntradaUsuario {
 }
 ````
 
+A estrutura do projeto ficará assim:
+![image](https://user-images.githubusercontent.com/22084402/154186937-c21957b9-00bc-4d03-ba3d-8b037470319e.png)
+
+
 2 - Teste a classe criada entendendo a diferença entre os tipos de diferença
 
 3 - Quando o sistema pedir um número inteiro digite um texto. Veja o que acontece.
@@ -93,9 +97,3 @@ Na aula 2, aprendemos:
 - Capturar dados do usuário
 - Diferença entre tipos de variáveis (String, Integer e Double)
 - Além disso, tivemos uma rápida explicação sobre número Double. 
-
- 
-
-
-
- 
