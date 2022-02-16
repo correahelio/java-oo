@@ -35,4 +35,9 @@ public class Main {
 ````
 "Criando nossa primeira classe!"
 ````
+
+7 - O projeto final ficará com a seguinte estrutura:
+![image](https://user-images.githubusercontent.com/22084402/154183390-ca0f73e1-4e87-4888-b4b0-3ab59f44b6ad.png)
+
+
  
