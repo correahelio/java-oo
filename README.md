@@ -88,6 +88,12 @@ public class OutraDecisaoNumeros {
 
 Nesse exemplo, usamos a decisão através do switch case. 
 
+
+A estrutura final do projeto ficará assim:
+![image](https://user-images.githubusercontent.com/22084402/154192436-96b425ad-d221-4e73-9ca1-9b5e39594e69.png)
+
+
+
 5 - Execute os códigos acima. Faça testes com números diferentes.
 
 # O que aprendemos ?
