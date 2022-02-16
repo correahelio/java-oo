@@ -1,5 +1,6 @@
 # java-oo
 Projeto criado com objeto de explicar conceitos básicos de programação e orientação a objeto em Java
+Vc pode usar a IDE que preferir, porém, esse projeto será abordado usando Intellij.
 
 # Divisão de branches
 Cada branch terá o conteúdo de um conceito
@@ -31,7 +32,7 @@ public class Main {
 }
 ````
 
-6 - Rode a classe Main.java. A saída do console deve ser:
+6 - Rode a classe Main.java (botão direito mouse > Run). A saída do console deve ser:
 ````
 "Criando nossa primeira classe!"
 ````
@@ -41,3 +42,8 @@ public class Main {
 
 
  
+# O que aprendemos ?
+Na aula 1, aprendemos:
+- Criar um projeto com estrutura de pasta (src/main/java)
+- Criar um projeto com estrutura de pacote (com.java.oo)
+- Rodar uma classe em java.
