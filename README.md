@@ -1,2 +1,38 @@
 # java-oo
 Projeto criado com objeto de explicar conceitos básicos de programação e orientação a objeto em Java
+
+# Divisão de branches
+Cada branch terá o conteúdo de um conceito
+Cada branch terá um ou mais exercícios para fixar o conhecimento abordado
+
+Essa é a branch-1 que corresponde ao Exercicio 1
+
+# Conceito
+Primeiro passo é criarmos a estrutura de pacotes Java. Os pacotes servem para organizar nosso código
+Como boa prática, sempre criamos um pacote raiz com um nome que seja relacionado com o projeto em que estamos trabalhando.
+
+1 - Crie uma pasta chamada 'src'
+2 - Dentro da pasta 'src' crie uma pasta chamada 'main'
+3 - Dentro da pasta 'main' crie uma pasta chamada 'java'
+
+Agora que temos a estrutura principal onde ficarão todas as nossas classes Java. Vamos criar um pacote principal
+
+4 - Dentro da pasta 'src/main/java' crie um pacote chamado 'com.java.oo'
+5 - Dentro desse pacote, crie uma classe Main.java com o seguinte conteúdo:
+
+````
+package com.java.oo;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        System.out.println("Criando nossa primeira classe!");
+    }
+}
+````
+
+6 - Rode a classe Main.java. A saída do console deve ser:
+````
+"Criando nossa primeira classe!"
+````
+ 
