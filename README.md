@@ -90,7 +90,8 @@ Nesse exemplo, usamos a decisão através do switch case.
 
 
 A estrutura final do projeto ficará assim:
-![image](https://user-images.githubusercontent.com/22084402/154192436-96b425ad-d221-4e73-9ca1-9b5e39594e69.png)
+![image](https://user-images.githubusercontent.com/22084402/154376217-79c7c241-9de7-4b08-baca-2a0c504c6ee2.png)
+
 
 
 
