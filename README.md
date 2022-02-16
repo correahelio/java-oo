@@ -5,39 +5,97 @@ Projeto criado com objeto de explicar conceitos básicos de programação e orie
 Cada branch terá o conteúdo de um conceito
 Cada branch terá um ou mais exercícios para fixar o conhecimento abordado
 
-Essa é a branch-1 que corresponde ao Exercicio 1
+Essa é a branch-2 que corresponde ao Exercicio 2
 
 # Conceito
-Primeiro passo é criarmos a estrutura de pacotes Java. Os pacotes servem para organizar nosso código
-Como boa prática, sempre criamos um pacote raiz com um nome que seja relacionado com o projeto em que estamos trabalhando.
+Nosso sistema precisa receber dados do nosso usuário.
+Para isso, vamos mostrar como capturar dados do teclado.
 
-1 - Crie uma pasta chamada 'src'
-2 - Dentro da pasta 'src' crie uma pasta chamada 'main'
-3 - Dentro da pasta 'main' crie uma pasta chamada 'java'
+1 - Dentro do pacote 'com.java.oo' crie uma classe chamada 'EntradaUsuario'
 
-Agora que temos a estrutura principal onde ficarão todas as nossas classes Java. Vamos criar um pacote principal
+Repare que já estamos abordando um conceito comum em programação.
+Se vc já leu sobre OO (Orientação a Objetos) já escutou a famosa frase "Baixo acoplamento e Alta Coesão".
+Em breve vc vai entender o que isso significa. Porém, nesse momento, vc tem que entender que estamos desenhando as classes com responsabilidades únicas.
+Além disso, elas precisam ter um nome intuitvo para explicar o que ela faz apenas pelo nome.
+Pensa que um novo desenvolvedor vai começar a trabalhar no nosso projeto.
 
-4 - Dentro da pasta 'src/main/java' crie um pacote chamado 'com.java.oo'
-5 - Dentro desse pacote, crie uma classe Main.java com o seguinte conteúdo:
+Para isso, faz sentido a classe chamar-se 'ExibirDados' sendo que ela estará programada para capturar dados que o cliente digitar ?
+Espero que sua resposta tenha sido não! :)
+
+Portanto, nesse momento, vc já aprendeu a lição básica de orientação a objetos. Alta coesão. Grave esse nome, falaremos muito disso.
+Na verdade, vc como DEV tem que se perguntar constantemente: "Meu código está com alta coesão ?"
+A resposta deve ser sim (sempre que possível).
+
+Relembrando alta coesão:
+Suas classes, métodos e variáveis precisam estar desenhadas com única responsabilidade e nome intuitivo.
+
+
+A classe 'EntradaUsuario' deve ficar com o seguinte conteúdo:
 
 ````
 package com.java.oo;
 
-public class Main {
-    
+import java.util.Scanner;
+
+public class EntradaUsuario {
+
     public static void main(String[] args) {
-        System.out.println("Criando nossa primeira classe!");
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Digite um texto:");
+        String texto = scanner.next();
+        System.out.println("O texto digitado foi: " + texto);
+
+        //Adicionado apenas para organizar o código de saída
+        System.out.println();
+
+        System.out.println("Digite um número inteiro:");
+        Integer numero = scanner.nextInt();
+        System.out.println("O número digitado foi: " + numero);
+
+        //Adicionado apenas para organizar o código de saída
+        System.out.println();
+
+        System.out.println("Digite um número real:");
+        Double numeroReal = scanner.nextDouble();
+        System.out.println("O número real digitado foi: " + numeroReal);
     }
 }
 ````
 
-6 - Rode a classe Main.java. A saída do console deve ser:
-````
-"Criando nossa primeira classe!"
-````
+2 - Teste a classe criada entendendo a diferença entre os tipos de diferença
 
-7 - O projeto final ficará com a seguinte estrutura:
-![image](https://user-images.githubusercontent.com/22084402/154183390-ca0f73e1-4e87-4888-b4b0-3ab59f44b6ad.png)
+3 - Quando o sistema pedir um número inteiro digite um texto. Veja o que acontece.
+
+4 - Faça o mesmo para variável que guarda o valor de 'número real'.
+Veja a diferença entre digitar os seguintes valores:
+- 5.0
+- 5,0
+
+5 - Vc viu que quando digitamos o valor 5,0 o sistema capturou o valor mas na hora de exibir ele exibiu 5.0 ?
+Isso acontece porque para a linguagem Java todos os valores do tipo Double usam como separador decimal o ponto (.)
+Para nós, humanos (usuários) usamos o separador decimal vírgula (,)
+Por isso nós digitamos o valor de 5,0 e o sistema (java) vai transformar isso em 5.0
+
+Isso é uma breve explicação sobre números reais em Java. Esse assunto vale um exercício e uma explicação separada no futuro, mas não agora. 
+
+
+Nesse momento é importante entender a diferença de tipos de variáveis. Os tipos abordados foram:
+- String
+- Integer
+- Double
+
+
+# O que aprendemos ?
+
+Na aula 2, aprendemos:
+- Capturar dados do usuário
+- Diferença entre tipos de variáveis (String, Integer e Double)
+- Além disso, tivemos uma rápida explicação sobre número Double. 
+
+ 
+
 
 
  
