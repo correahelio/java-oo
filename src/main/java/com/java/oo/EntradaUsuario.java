@@ -1,4 +1,4 @@
-package com.java.oo;
+package com.java.helio;
 
 import java.util.Scanner;
 
