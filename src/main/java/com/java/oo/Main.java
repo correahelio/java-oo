@@ -1,4 +1,4 @@
-package com.java.helio;
+package com.java.oo;
 
 public class Main {
     public static void main(String[] args) {
