@@ -5,121 +5,156 @@ Projeto criado com objeto de explicar conceitos básicos de programação e orie
 Cada branch terá o conteúdo de um conceito
 Cada branch terá um ou mais exercícios para fixar o conhecimento abordado
 
-Essa é a branch-4.1 que corresponde ao Exercicio 4.1
+Essa é a branch-4.2 que corresponde ao Exercicio 4.2
 
 # Conceito
 Nosso sistema precisa executar algumas açõs repetitivas.
 Para isso, vamos mostrar alguns exemplos de repetição.
 
-1 - Dentro do pacote 'com.java.oo' crie um pacote chamado 'repeticao'
-
-2 - Dentro do pacote 'repeticao' crie uma classe chamada RepeticaoComFor.java com o seguinte conteúdo:
+1 - Dentro do pacote 'repeticao' crie uma classe chamada RepeticaoComDoWhile.java com o seguinte conteúdo:
 
 ```
 package com.java.oo.repeticao;
 
 import java.util.Scanner;
 
-public class RepeticaoComFor {
+public class RepeticaoComDoWhile {
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Digite um texto:");
-        String texto = scanner.next();
-        System.out.println("O texto digitado foi: " + texto);
-
-        System.out.println("Digite um texto:");
-        texto = scanner.next();
-        System.out.println("O texto digitado foi: " + texto);
-
-        System.out.println("Digite um texto:");
-        texto = scanner.next();
-        System.out.println("O texto digitado foi: " + texto);
-
+        Integer numero = null;
+        do {
+            System.out.println("Digite um número:");
+            numero = scanner.nextInt();
+            System.out.println("O número digitado foi: " + numero);
+        } while(numero > 0);
     }
 }
 ```
 
-3 - Vc reparou que o nosso código está capturando 3 mensagens de texto que o usuário digitou ?
-Legal, nosso código funcionou muito bem.
+2 - Repare que nosso código vai ser executado enquanto o usuário digitar um valor maior que 0.
 
-Agora imagina que precisamos alterar nosso sistema para capturar 20 mensagens de texto do usuário.
-Como ficaria nosso código ?
+3 - Ou seja, nesse caso não sabemos quantas vezes nosso código pode ser executado.
 
-Provavelmente ficaria bem extenso (com várias linhas) e com bastante código repetitivo.
+Ele pode ser executado 1 vez, ou 100 vezes. Depende do usuário do nosso sistema.
 
-Na programação, a repetição de código deve ser evitada. Isso é uma boa prática de programação.
+Portanto, usamos a repetição 'do-while' quando queremos executar pelo menos 1 vez um bloco de código.
 
-Para isso, vamos aprender a repetição usando 'for'.
 
-Vamos alterar o conteúdo da nossa classe para ficar da seguinte maneira:
+Agora vamos para outro exemplo.
 
 ```
 package com.java.oo.repeticao;
 
 import java.util.Scanner;
 
-public class RepeticaoComFor {
+public class RepeticaoComWhile {
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 
-        for(int i = 0; i < 3; i++) {
-            System.out.println("Digite um texto:");
-            String texto = scanner.next();
-            System.out.println("O texto digitado foi: " + texto);
+        System.out.println("Digite um número:");
+        Integer numero1 = scanner.nextInt();
+
+        System.out.println("Digite outro número:");
+        Integer numero2 = scanner.nextInt();
+        
+        while(numero1 > numero2) {
+            System.out.println("Digite mais um número:");
+            numero1 = scanner.nextInt();
         }
     }
 }
 ```
-
-4 - Vc reparou que nosso código está fazendo a mesma coisa que antes ?
-
-Agora se quisermos alterar nosso sistema para capturarmos 20 textos de usuário, 
-precisamos apenas alterar a quantidade de repetições que desejamos.
-
-Agora, vamos as explicações de como funciona um 'for' em Java:
-
-
-A primeira parte do 'if' é a declaração. 
-Declaramos uma variável com o nome 'i' do tipo 'int' e iniciamos ela com valor de 0 (zero).
-
-![image](https://user-images.githubusercontent.com/22084402/154380221-b92c364a-0d08-4340-97dd-e124ac13903b.png)
-
-A segunda parte do 'if' é a validação. 
-O trecho da validação é executado toda vez antes da repetição ocorrer.
-Se a expressão de validação for 'true' o sistema vai executar o bloco de código.
-Se a expressão de validação for 'false' o sistema vai pular o bloco de repetição e seguir para a próxima linha após o bloco de repetição. 
-
-No nosso exemplo o sistema vai entrar dentro da repetição sempre que 'i < 3'. Ou seja:
-- Se i = 0 o bloco será executado.
-- Se i = 1 o bloco será executado.
-- Se i = 2 o bloco será executado.
-- Se i = 3 o bloco NÃO será executado.
-
-![image](https://user-images.githubusercontent.com/22084402/154380281-2745c6e3-bd4b-4b66-8aeb-ee0b12521c90.png)
-
-A última parte do 'if' é executada após a última linha do bloco de código.
-
-Ou seja, após a execução da linha abaixo será executada a última parte do 'if':
-
-System.out.println("O texto digitado foi: " + texto);
-
-Após a linha acima, o sistema vai executar a terceira parte do 'if' que é 'i++'.
-Nesse caso, estamos aumentando o valor da variável 'i'.
-
-O código 'i++' é a mesma coisa que 'i = i + 1'; 
-
-
-![image](https://user-images.githubusercontent.com/22084402/154380309-7db4a992-ec6f-4cae-a968-4945ff568767.png)
-
-5 - Faça testes com o 'for' para fixar o seu conhecimento.
-
-
+ 
+ 4 - Nesse exemplo vemos que o nosso código pode ou não executar o bloco de repetição.
+ 
+ Após o usuário digitar 2 números o sistema valida:
+ 
+ - Se a expressão 'número1 > número2' for verdadeiro ele vai executar o bloco de repetição.
+ - Se a expressão 'número1 > número2' for false ele vai terminar a execução.
+ 
+ 
+ 5 - Portanto, nesse caso, nosso sistema pode ou não executar o bloco de repetição.
+ 
+ 6 - Teste as 2 classes criadas, veja a diferença entre elas.
+ 
+ 7 - A estrutura final do projeto ficará assim:
+ <pendente imagem> 
+ 
+ 8 - A diferença entre eles é que:
+ - A repetição 'do-while' o bloco de repetição será executado ao menos uma vez.
+ 
+ O sistema primeiro executa ('do') e depois faz a validação para verificar se deve executar novamente ('while').
+ Por isso chamamos a repetição de 'do-while'.
+ 
+ 
+ - A repetição 'while' pode ou não ser executada. Depende da validação.
+ 
+ O sistema primeiro valida ('while') para então decidir se deve ou não executar.
+ 
+ 
 # O que aprendemos ?
 
-Na aula 4.1, aprendemos:
-- Repetição com 'for'
+Na aula 4.2, aprendemos:
+- Método de repetição 'do'
+- Método de repetição 'do-while'
+
+# Vamos exercitar o que aprendemos até aqui ? - Exercício 1
+
+1 - Crie um sistema que capture 5 números que o usuário digitar.
+
+2 - Após capturar todos os números o sistema deve somar todos eles e exibir o resultado.
+
+### Caso de teste 1:
+Exemplo quando o usuário digitar os números: 1, 2, 7, 10, 10:
+
+- A saída do sistema deve ser: 30
+
+# Vamos melhorar ? - Exercício 2
+
+1 - Crie um sistema que capture números que o usuário digitar.
+
+## Regra de negócio:
+Se a soma dos números digitados for maior que 50 o sistema deve parar a execução.
+
+ ### Caso de teste 1: 
+ 
+Exemplo quando o usuário digitar os seguintes números: 
+- 10  : O sistema vai continuar executando
+- 10  : O sistema vai continuar executando
+- 10  : O sistema vai continuar executando
+- 20  : O sistema vai parar a execução.
+
+
+# Vamos melhorar ? - Exercício 3
+1 - Crie um sistema que capture dois números que o usuário digitar.
+
+2 - Se a multiplicação dos 2 números for > 100 o sistema deve continuar executando.
+
+3 - Se o último número digitado for 1 o sistema deve parar a execução.
+
+### Caso de teste 1: 
+ Exemplo quando o usuário digitar os números 10 e 10 
+ O sistema vai parar de executar.
+ 
+### Caso de teste 2: 
+  Exemplo quando o usuário digitar os números 10 e 20 
+  O sistema vai continuar executando.
+  
+### Caso de teste 3: 
+  Exemplo quando o usuário digitar os números 50 e 2 
+  O sistema vai parar de executar.
+  
+### Caso de teste 3: 
+  Exemplo quando o usuário digitar os números 100 e 1 
+  O sistema vai parar de executar.
+  
+### Caso de teste 4: 
+  Exemplo quando o usuário digitar os números 200 e 1 
+  O sistema vai parar de executar.
+  
+### Caso de teste 4: 
+  Exemplo quando o usuário digitar os números 56 e 2 
+  O sistema vai continuar executando.
