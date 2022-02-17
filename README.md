@@ -5,190 +5,120 @@ Projeto criado com objeto de explicar conceitos básicos de programação e orie
 Cada branch terá o conteúdo de um conceito
 Cada branch terá um ou mais exercícios para fixar o conhecimento abordado
 
-Essa é a branch-3 que corresponde ao Exercicio 3
+Essa é a branch-4.1 que corresponde ao Exercicio 4.1
 
 # Conceito
-Nosso sistema precisa receber dados do nosso usuário e tomar algumas decisões.
-Para isso, vamos mostrar alguns exemplos.
+Nosso sistema precisa executar algumas açõs repetitivas.
+Para isso, vamos mostrar alguns exemplos de repetição.
 
-1 - Dentro do pacote 'com.java.oo' crie um pacote chamado 'decisao'
+1 - Dentro do pacote 'com.java.oo' crie um pacote chamado 'repeticao'
 
-2 - Dentro do pacote 'decisao' crie uma classe chamada DecisaoNumeros.java com os seguinte conteúdo:
+2 - Dentro do pacote 'repeticao' crie uma classe chamada RepeticaoComFor.java com o seguinte conteúdo:
 
 ```
-package com.java.helio;
+package com.java.oo.repeticao;
 
 import java.util.Scanner;
 
-public class DecisaoNumeros {
+public class RepeticaoComFor {
 
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Digite um número inteiro:");
-        Integer numero = scanner.nextInt();
+        System.out.println("Digite um texto:");
+        String texto = scanner.next();
+        System.out.println("O texto digitado foi: " + texto);
 
-        //Adicionado para organizar o código
-        System.out.println();
+        System.out.println("Digite um texto:");
+        texto = scanner.next();
+        System.out.println("O texto digitado foi: " + texto);
 
-        if(numero > 10 ) {
-            System.out.println("O número digitado é maior que 10");
-        }
+        System.out.println("Digite um texto:");
+        texto = scanner.next();
+        System.out.println("O texto digitado foi: " + texto);
 
-        if(numero > 50 ) {
-            System.out.println("O número digitado é maior que 50");
-        } else {
-            System.out.println("O número digitado é menor que 50");
+    }
+}
+```
+
+3 - Vc reparou que o nosso código está capturando 3 mensagens de texto que o usuário digitou ?
+Legal, nosso código funcionou muito bem.
+
+Agora imagina que precisamos alterar nosso sistema para capturar 20 mensagens de texto do usuário.
+Como ficaria nosso código ?
+
+Provavelmente ficaria bem extenso (com várias linhas) e com bastante código repetitivo.
+
+Na programação, a repetição de código deve ser evitada. Isso é uma boa prática de programação.
+
+Para isso, vamos aprender a repetição usando 'for'.
+
+Vamos alterar o conteúdo da nossa classe para ficar da seguinte maneira:
+
+```
+package com.java.oo.repeticao;
+
+import java.util.Scanner;
+
+public class RepeticaoComFor {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        for(int i = 0; i < 3; i++) {
+            System.out.println("Digite um texto:");
+            String texto = scanner.next();
+            System.out.println("O texto digitado foi: " + texto);
         }
     }
 }
 ```
 
-3 - Nessa classe mostramos que pode existir um fator de decisão 'if'
-E o 'if' não precisa ter um else. Ou seja, a primeira decisão que fizemos não tem else.
-Já a segunda decisão que fizemos, tem um else.
+4 - Vc reparou que nosso código está fazendo a mesma coisa que antes ?
 
-Portanto, vimos que o else é um trecho de código opcional (não obrigatório) em uma tomada de decisão
+Agora se quisermos alterar nosso sistema para capturarmos 20 textos de usuário, 
+precisamos apenas alterar a quantidade de repetições que desejamos.
+
+Agora, vamos as explicações de como funciona um 'for' em Java:
 
 
-4 - Vamos a mais um exemplo de tomada de decisão
+A primeira parte do 'if' é a declaração. 
+Declaramos uma variável com o nome 'i' do tipo 'int' e iniciamos ela com valor de 0 (zero).
 
-Dentro do mesmo pacote 'com.java.oo.decisao' crie uma classe chamada 'OutraDecisaoNumeros.java' com o seguinte conteúdo:
+<pendente_imagem>
 
-```
-package com.java.helio;
+A segunda parte do 'if' é a validação. 
+O trecho da validação é executado toda vez antes da repetição ocorrer.
+Se a expressão de validação for 'true' o sistema vai executar o bloco de código.
+Se a expressão de validação for 'false' o sistema vai pular o bloco de repetição e seguir para a próxima linha após o bloco de repetição. 
 
-import java.util.Scanner;
+No nosso exemplo o sistema vai entrar dentro da repetição sempre que 'i < 3'. Ou seja:
+- Se i = 0 o bloco será executado.
+- Se i = 1 o bloco será executado.
+- Se i = 2 o bloco será executado.
+- Se i = 3 o bloco NÃO será executado.
 
-public class OutraDecisaoNumeros {
+<pendente_imagem>
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+A última parte do 'if' é executada após a última linha do bloco de código.
 
-        System.out.println("Digite um número inteiro:");
-        Integer numero = scanner.nextInt();
+Ou seja, após a execução da linha abaixo o sistema vai executar:
+System.out.println("O texto digitado foi: " + texto);
 
-        //Adicionado para organizar o código
-        System.out.println();
+Após a linha acima, o sistema vai executar a terceira parte do 'if' que é 'i++'.
+Nesse caso, estamos aumentando o valor da variável 'i'.
 
-        switch (numero) {
-            case 10:
-                System.out.println("Numero digitado é 10");
-                break;
-            case 20:
-                System.out.println("Numero digitado é 20");
-                break;
-            default:
-                System.out.println("Numero digitado é diferente de 10 e 20");
-                break;
-        }
-    }
-}
-```
+O código 'i++' é a mesma coisa que 'i = i + 1'; 
 
-Nesse exemplo, usamos a decisão através do switch case. 
+
+<pendente_imagem>
+
+5 - Faça testes com o 'for' para fixar o seu conhecimento.
+
 
 # O que aprendemos ?
 
-Na aula 3, aprendemos:
-- Decisão com if
-- Decisão com if/else
-- Decisão com switch case
-
-# Vamos exercitar o que aprendemos até aqui ? - Exercício 1
-
-1 - Crie um sistema que capture a idade do usuário.
-A idade do usuário é um número inteiro.
-
-2 - Se o usuário for menor de idade nosso sistema deve exibir a mensagem:
-"Usuário é menor de idade".
-
-3 - Se o usuário for maior de idade nosso sistema deve exibir a mensagem:
-"Usuário é maior de idade".
-
-
-# Vamos melhorar ? - Exercício 2 
-1 - Crie um sistema que capture a idade do usuário.
-A idade do usuário é um número inteiro.
-
-2 - Se o usuário tiver:
-- Mais que 10 anos o sistema deve mostrar: "Usuário tem mais que 10 anos"
-- Menos que 20 anos o sistema deve mostrar: "Usuário tem menos que 20 anos"
-- 20 anos o sistema deve mostrar: "Usuário tem 20 anos"
-- Qualquer outra idade o sistema deve mostrar: "Usuário tem mais que 20 anos"
-
-Regra de negócio: 
-O sistema só pode exibir uma única mensagem de saída.
-
-Casos de teste:
-Exemplo quando o usuário digitar que tem 5 anos:
-- A saída do sistema deve ser: "Usuário tem menos que 20 anos".
-
-Exemplo quando o usuário digitar que tem 10 anos:
-- A saída do sistema deve ser: "Usuário tem menos que 20 anos".
-
-Exemplo quando o usuário digitar que tem 11 anos:
-- A saída do sistema deve ser: "Usuário tem mais que 10 anos".
-
-Exemplo quando o usuário digitar que tem 20 anos:
-- A saída do sistema deve ser: "Usuário tem 20 anos".
-
-Exemplo quando o usuário digitar que tem 21 anos:
-- A saída do sistema deve ser: "Usuário tem mais que 20 anos".
-
-# Vamos melhorar ? - Exercício 3 
-1 - Crie um sistema que capture a idade de 2 usuários.
-As idades dos usuários devem ser do tipo inteiro.
-
-- Se a idade do Usuário 1 for maior que a idade do Usuário 2 o sistema deve exibir a mensagem:
-"Usuário 1 é mais velho!"
-
-- Se a idade do Usuário 2 for maior que a idade do Usuário 1 o sistema deve exibir a mensagem:
-"Usuário 2 é mais velho!"
-
-- Se a idade deles forem iguais o sistema deve exibir a mensagem:
-"Os usuários têm a mesma idade!"
-
-- Se a soma da idade dos 2 usuários for um número par o sistema deve exibir a mensagem:
-"A soma das idades é correspondente a um número par"
-
-- Se a soma da idade dos 2 usuários for um número ímpar o sistema deve exibir a mensagem:
-"A soma das idades é correspondente a um número ímpar"
-
-
-Casos de teste:
-- Se o usuário 1 digitar que tem 10 anos e se o usuário 2 digitar que tem 20 anos o sistema deve exibir:
-"Usuário 2 é mais velho!"
-"A soma das idades é correspondente a um número par"
-
-- Se o usuário 1 digitar que tem 20 anos e se o usuário 2 digitar que tem 10 anos o sistema deve exibir:
-Usuário 1 é mais velho!
-"A soma das idades é correspondente a um número par"
-
-- Se o usuário 1 digitar que tem 15 anos e se o usuário 2 digitar que tem 16 anos o sistema deve exibir:
-Usuário 2 é mais velho!
-"A soma das idades é correspondente a um número ímpar"
-
-- Se o usuário 1 digitar que tem 15 anos e se o usuário 2 digitar que tem 15 anos o sistema deve exibir:
-"Os usuários têm a mesma idade!"
-"A soma das idades é correspondente a um número par"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
- 
+Na aula 4.1, aprendemos:
+- Repetição com 'for'
