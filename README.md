@@ -87,7 +87,7 @@ Agora, vamos as explicações de como funciona um 'for' em Java:
 A primeira parte do 'if' é a declaração. 
 Declaramos uma variável com o nome 'i' do tipo 'int' e iniciamos ela com valor de 0 (zero).
 
-<pendente_imagem>
+![image](https://user-images.githubusercontent.com/22084402/154380221-b92c364a-0d08-4340-97dd-e124ac13903b.png)
 
 A segunda parte do 'if' é a validação. 
 O trecho da validação é executado toda vez antes da repetição ocorrer.
@@ -100,11 +100,12 @@ No nosso exemplo o sistema vai entrar dentro da repetição sempre que 'i < 3'. 
 - Se i = 2 o bloco será executado.
 - Se i = 3 o bloco NÃO será executado.
 
-<pendente_imagem>
+![image](https://user-images.githubusercontent.com/22084402/154380281-2745c6e3-bd4b-4b66-8aeb-ee0b12521c90.png)
 
 A última parte do 'if' é executada após a última linha do bloco de código.
 
-Ou seja, após a execução da linha abaixo o sistema vai executar:
+Ou seja, após a execução da linha abaixo será executada a última parte do 'if':
+
 System.out.println("O texto digitado foi: " + texto);
 
 Após a linha acima, o sistema vai executar a terceira parte do 'if' que é 'i++'.
@@ -113,7 +114,7 @@ Nesse caso, estamos aumentando o valor da variável 'i'.
 O código 'i++' é a mesma coisa que 'i = i + 1'; 
 
 
-<pendente_imagem>
+![image](https://user-images.githubusercontent.com/22084402/154380309-7db4a992-ec6f-4cae-a968-4945ff568767.png)
 
 5 - Faça testes com o 'for' para fixar o seu conhecimento.
 
