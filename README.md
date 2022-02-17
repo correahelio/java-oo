@@ -117,7 +117,7 @@ Exemplo quando o usuário digitar os números: 1, 2, 7, 10, 10:
 1 - Crie um sistema que capture números que o usuário digitar.
 
 ## Regra de negócio:
-Se a soma dos números digitados for maior que 50 o sistema deve parar a execução.
+Se a soma dos números digitados for maior ou igual a 50 o sistema deve parar a execução.
 
  ### Caso de teste 1: 
  
