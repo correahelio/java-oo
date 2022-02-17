@@ -131,7 +131,7 @@ Exemplo quando o usuário digitar os seguintes números:
 # Vamos melhorar ? - Exercício 3
 1 - Crie um sistema que capture dois números que o usuário digitar.
 
-2 - Se a multiplicação dos 2 números for > 100 o sistema deve continuar executando.
+2 - Se a multiplicação dos 2 números for maior que 100 o sistema deve continuar executando.
 
 3 - Se o último número digitado for 1 o sistema deve parar a execução.
 
