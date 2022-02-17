@@ -81,7 +81,7 @@ public class RepeticaoComWhile {
  6 - Teste as 2 classes criadas, veja a diferença entre elas.
  
  7 - A estrutura final do projeto ficará assim:
- <pendente imagem> 
+ ![image](https://user-images.githubusercontent.com/22084402/154383713-a79ad2cc-54ad-4815-a10b-a4d3aab19e55.png)
  
  8 - A diferença entre eles é que:
  - A repetição 'do-while' o bloco de repetição será executado ao menos uma vez.
