@@ -136,25 +136,19 @@ Exemplo quando o usuário digitar os seguintes números:
 3 - Se o último número digitado for 1 o sistema deve parar a execução.
 
 ### Caso de teste 1: 
- Exemplo quando o usuário digitar os números 10 e 10 
- O sistema vai parar de executar.
+ Exemplo quando o usuário digitar os números 10 e 10 o sistema vai parar de executar.
  
 ### Caso de teste 2: 
-  Exemplo quando o usuário digitar os números 10 e 20 
-  O sistema vai continuar executando.
+  Exemplo quando o usuário digitar os números 10 e 20 o sistema vai continuar executando.
   
 ### Caso de teste 3: 
-  Exemplo quando o usuário digitar os números 50 e 2 
-  O sistema vai parar de executar.
+  Exemplo quando o usuário digitar os números 50 e 2 o sistema vai parar de executar.
   
 ### Caso de teste 3: 
-  Exemplo quando o usuário digitar os números 100 e 1 
-  O sistema vai parar de executar.
+  Exemplo quando o usuário digitar os números 100 e 1 o sistema vai parar de executar.
   
 ### Caso de teste 4: 
-  Exemplo quando o usuário digitar os números 200 e 1 
-  O sistema vai parar de executar.
+  Exemplo quando o usuário digitar os números 200 e 1 o sistema vai parar de executar.
   
 ### Caso de teste 4: 
-  Exemplo quando o usuário digitar os números 56 e 2 
-  O sistema vai continuar executando.
+  Exemplo quando o usuário digitar os números 56 e 2 o sistema vai continuar executando.
