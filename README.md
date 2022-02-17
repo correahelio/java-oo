@@ -144,11 +144,11 @@ Exemplo quando o usuário digitar os seguintes números:
 ### Caso de teste 3: 
   Exemplo quando o usuário digitar os números 50 e 2 o sistema vai parar de executar.
   
-### Caso de teste 3: 
+### Caso de teste 4: 
   Exemplo quando o usuário digitar os números 100 e 1 o sistema vai parar de executar.
   
-### Caso de teste 4: 
+### Caso de teste 5: 
   Exemplo quando o usuário digitar os números 200 e 1 o sistema vai parar de executar.
   
-### Caso de teste 4: 
+### Caso de teste 6: 
   Exemplo quando o usuário digitar os números 56 e 2 o sistema vai continuar executando.
